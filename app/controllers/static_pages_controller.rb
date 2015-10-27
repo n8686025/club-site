@@ -4,4 +4,8 @@ class StaticPagesController < ApplicationController
 
   def news
   end
+
+  def events
+  end
+  
 end
