@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
 
-  root 'static_pages#home'
-  get 'static_pages/news'
-  get 'static_pages/events'
+  get 'users/new'
 
+  root 'static_pages#home'
+  get 'news'    => 'static_pages#news'
+  get 'events'  => 'static_pages#events'
+  get 'contact' => 'static_pages#contact'
+  get 'signup'  => 'users#new'
 
 end
 
