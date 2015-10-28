@@ -2,3 +2,9 @@ lachlan:
   name: Lachlan Miller
   email: lachlan.miller.1990@hotmail.com
   password_digest: <%= User.digest('password') %>
+  admin: true
+
+chinami:
+  name: Chinami Murakami
+  email: chinami.murakami.1993@hotmail.com
+  password_digest: <$= User.digest('password') %>
