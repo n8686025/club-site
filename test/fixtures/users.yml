@@ -1,0 +1,4 @@
+lachlan:
+  name: Lachlan Miller
+  email: lachlan.miller.1990@hotmail.com
+  password_digest: <%= User.digest('password') %>
