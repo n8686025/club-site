@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'events/new'
+
+  get 'users/new'
+
+  get 'events/new'
+
   get 'sessions/new'
 
   get 'users/new'
@@ -9,6 +15,7 @@ Rails.application.routes.draw do
   get 'events'  => 'static_pages#events'
   get 'contact' => 'static_pages#contact'
   get 'signup'  => 'users#new'
+  get 'create_event'  => 'events#new'
 
   get 'login'   => 'sessions#new'
   post'login'   => 'sessions#create'
