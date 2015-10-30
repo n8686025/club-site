@@ -1,7 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
+event_one:
+  name: Halloween
 
-two:
-  name: MyString
+event_two:
+  name: Christmas
+

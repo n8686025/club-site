@@ -1,0 +1,12 @@
+<% provide(:title, "Edit event information") %>
+<h1>Update event information</h1>
+
+<div class="row">
+	<%= form_for(@event) do |f| %>
+		<%= render 'shared/event_error_messages' %>
+		<%= f.label :name %>
+		<%= f.text_field :name, class: 'form-control' %>
+
+		<%= f.submit "Save changes", class: 'btn btn-primary' %>
+	<% end %>
+</div>

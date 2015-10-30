@@ -5,5 +5,16 @@
 </p>
 
 <div class="row">
-	<%= link_to "Create event", create_event_path, class: "btn btn-primary" %>
+
+	<% @events.each do |event|  %>
+		<ul>
+			<%= link_to event.name, event %>
+		</ul>
+	
+	<% end %>
+
+	<% if logged_in? && current_user.admin? %>
+
+		<%= link_to "Create event", create_event_path, class: "btn btn-primary" %>
+	<% end %>
 </div>

@@ -7,4 +7,4 @@ lachlan:
 chinami:
   name: Chinami Murakami
   email: chinami.murakami.1993@hotmail.com
-  password_digest: <$= User.digest('password') %>
+  password_digest: <%= User.digest('password') %>
