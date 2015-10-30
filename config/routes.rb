@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   delete 'logout'  => 'sessions#destroy'
 
   resources :users
+  resources :events # allow us to generate named routes
 
 end
 
